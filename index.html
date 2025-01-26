@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bitwa o krowę</title>
+	<link rel="icon" type="image/x-icon" href="icon_cow.png">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<style type="text/tailwindcss">
 	
@@ -12,22 +13,19 @@
 <body id="top">
 	<header class="bg-emerald-950 text-white sticky top-0 z-50">
   <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="#" class="text-2xl font-bold text-secondary">Bitwa o Krowę</a>
-    <!-- Przycisk do otwierania menu w wersji mobilnej -->
+    <a href="#top" class="text-2xl font-bold text-secondary">Bitwa o Krowę</a>
     <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
     </button>
-    <!-- Nawigacja w wersji desktop -->
     <nav class="hidden md:flex space-x-6">
-      <a href="#top" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
+      <a href="#about" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
       <a href="#history" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
       <a href="#gallery" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Galeria</a>
       <a href="#city" class="text-secondary hover:text-accent font-medium  hover:underline hover:text-green-300">Miasta</a>
     </nav>
   </div>
-  <!-- Menu w wersji mobilnej -->
   <nav id="menu" class="hidden md:hidden bg-emerald-900 text-white px-6 py-4 space-y-4">
     <a href="#top" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
     <a href="#history" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
@@ -41,21 +39,30 @@
     		menu.classList.toggle('hidden');
  		}
 	</script>
-	<section class="relative bg-cover bg-center text-white h-[750px] flex items-center justify-center text-center" style="background-image: url('bg_cow.jpeg');">
-  <h1 class="text-5xl sm:text-7xl lg:text-9xl font-bold">Bitwa o krowę</h1>
-</section>
-	<section id="history" class="px-4 bg-green-700 text-white py-20 pb-40">
+	<section class="relative bg-cover bg-center text-white h-[750px] flex items-center flex-col justify-center text-center" style="background-image: url('bg_cow.jpeg');">
+ 		 <h1 class="text-5xl sm:text-7xl lg:text-9xl font-bold">Bitwa o krowę</h1>
+ 		 <h2 class="text-3xl sm:text-5xl lg:text-7xl font-bold">15 lipca 1469</h2>
+ 	</section>
+ 	<section id="about" class="py-20 pb-40 bg-gray-100 px-20">
+ 		<h2 class="text-3xl font-bold text-center mb-6 pb-10">O wydarzeniu</h2>
+ 		<p>Jedna z bardziej spektakularnych imprez Świdwińskiego Ośrodka Kultury, będących jego wizytówką. Impreza ta znajduje swoje źródło w dawnych dziejach ziemi świdwińskiej, kiedy to <b>15 lipca 1469 roku</b> miała miejsce krwawa bitwa pomiędzy mieszkańcami Świdwina i Białogardu. Powodem konfliktu był spór o krowę zagarniętą właścicielowi świdwińskiemu przez białogardzian. Dokładnie pięćset lat po tym zatargu, w celu upamiętnienia tego historycznego wydarzenia, odbył się pierwszy wielki turniej pod nazwą <b>„Bitwa o Krowę”</b>, z inicjatywy ówczesnego instruktora Powiatowego Ośrodka Kultury – Leona Zdanowicza. Od tego czasu rokrocznie impreza odbywa się naprzemiennie w Świdwinie i Białogardzie, a symboliczne trofeum stanowią pięknie spreparowane krowie rogi, które zdobią siedzibę zwycięskiej drużyny, do czasu kolejnej bitewnej potyczki. Program „Bitwy o Krowę” oferuje widzom co roku szereg ciekawych atrakcji, do których należą między innymi ćwiczenia z białą bronią, turnieje łucznicze, inscenizacje bitewne, potyczki rycerskie, a także pokazy zabaw plebejskich i średniowiecznych tańców.</p><br>
+ 		<p>Głównym punktem programu jest turniej wojów rozgrywany pomiędzy drużynami Świdwina i Białogardu. Składa się z kilkunastu konkurencji sprawnościowych, z których wyróżnić warto strzelanie z łuku i kuszy oraz rzut oszczepem i toporem do celu. Całość imprezy, która utrzymana jest w klimacie czasów średniowiecznych, idealnie wkomponowuje się w scenerię zamkową, która dodaje wydarzeniu specyficznego uroku i atrakcyjności. „Bitwa o Krowę” cieszy się dużą popularnością i zainteresowaniem wśród mieszkańców obu miast oraz turystów i co roku przyciąga liczne grono odbiorców.</p><br>
+ 		<p>Na uwagę zasługuje fakt, iż „Bitwa o Krowę” w 2006 roku została nagrodzona nominacją w kategorii produkt turystyczny województwa zachodniopomorskiego przez kapitułę na czele z Marszałkiem Województwa Zachodniopomorskiego prof. Zygmuntem Meyerem. Nagrody przyznano jedynie trzem imprezom w skali województwa, co świadczy o ogromnym wyróżnieniu.</p><br>
+ 		<p class="text-right">Źródło: <a href="https://zamek.swidwin.pl/bitwa-o-krowe/" class="text-green-600 hover:underline">Świdwiński Ośrodek Kultury Zamek</a></p>
+ 	</section>
+	<section id="history" class="px-10 bg-green-700 text-white py-20 pb-20">
 		<div class="mx-4 sm:mx-10 lg:mx-20 ">
 			<h2 class="text-center text-2xl sm:text-3xl font-bold mb-6 pb-10">Historia</h2>
 			<p class="mb-4 text-sm sm:text-base">
-				Wojna o krowę czy też krowia bitwa lub bitwa o krowę została stoczona 15 lipca 1469 roku pod graniczną wsią Długie (dziś województwo zachodniopomorskie). Wojskami białogardzian dowodzić miał tamtejszy wójt Karsten z Oparzna, zaś nad siłami świdwińskimi dowództwo sprawował syn wójta, Christoph von Polenz. Zdecydowanym zwycięzcą starcia okazały się oddział miasta brandenburskiego.
-			</p>
-			<p class="mb-6 text-sm sm:text-base">Więcej o historii bitwy możesz przeczytać w artykule <a href="https://historykon.pl/wojna-o-krowe-1469/" class="text-green-300 hover:underline">"15 lipca 1469 roku rozpoczęła się wojna o krowę"</a>.</p>
-			<p>Historia bez cenzury o bitwie o krowę:</p><br><br>
+				W 1469 roku pomiędzy brandenburskim Świdwinem a pomorskim Białogardem doszło do bitwy, która była efektem sporu o krowę mieszkańców przygranicznych wiosek. Mieszkaniec Niemierzyna pożyczył, na okres zimy, krowę mieszkańcowi ziemi białogardzkiej. Ten jednak, na wiosnę, nie spieszył się z oddaniem własności. Poszkodowany, wraz z sąsiadami wtargnął do zagrody białogardzkiej odebrał swoją krowę i kilka sztuk bydła więcej. W odpowiedzi chłopi białogardzcy napadli Niemierzyno i ukradli znaczną ilość bydła. Na co Jakob von Polenz ówczesny Wójt Świdwina poskarżył się Staroście białogardzkiemu Karstenowi Wopersnow. Ten skargę pozostawił bez odpowiedzi. W efekcie za przyzwoleniem władzy świdwińskiej zorganizowano oddział złożony z chłopów i mieszczan, który wtargnął na ziemię białogardzką i zagarnął bydło znajdujące się na pastwiskach. Skłoniło to starostę białogardzkiego do zorganizowania wyprawy wojennej przeciwko Świdwinowi. Wieść o szykujących się do wojny białogardzianach dotarła do Świdwina. Jakob von Polenz postanowił wysłać znaczny oddział, pod przywództwem swojego syna Christopha, naprzeciw nieprzyjacielowi. Świdwinianie i białogardzianie spotkali się pod wsią Łęgi i tam starli w bitwie. Podobno poległo 300 Pomorzan, a 100 wzięto do niewoli. Zarekwirowano 50 wozów ze sprzętem wojennym, sztandar mieszczan białogardzkich zawisł w świdwińskim kościele. Według legendy pierścień żelazny ukuty ze strzemion, których używał starosta Wopersnow zawisł nad przejściem w Bramie Kamiennej.
+			</p><br>
+			<p class="text-right">Źródło: <a href="https://zamek.swidwin.pl/bitwa-o-krowe/" class="text-green-300 hover:underline">Świdwiński Ośrodek Kultury Zamek</a></p><br>
 			<div class="aspect-w-16 aspect-h-9 flex justify-center">
 			<iframe src="https://www.youtube.com/embed/RhT0Oxv6oPc?si=opC9qFULp6SjzfCj&amp;start=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full max-w-lg aspect-video"></iframe>
 			</div><br><br>
-			<p>Obejrzyj również <a href="https://vod.tvp.pl/programy,88/wojownicy-czasu-odcinki,389851/odcinek-102,S01E102,1766731" class="text-green-300 hover:underline">Wojowników czasu</a>, którzy również opowiedzieli historie Bitwy o krowę.</p>
+			<p class="mb-6 text-sm sm:text-base">Więcej informacji na temat bitwy o krowę:<br>
+			<a href="https://historykon.pl/wojna-o-krowe-1469/" class="text-green-300 hover:underline">"15 lipca 1469 roku rozpoczęła się wojna o krowę"</a>.<br>
+			<a href="https://vod.tvp.pl/programy,88/wojownicy-czasu-odcinki,389851/odcinek-102,S01E102,1766731" class="text-green-300 hover:underline">Wojownicy czasu odc. 102 - Zatarg o krowę między mieszkańcami Świdwina i Białogardu.</a></p>
 		</div>
 	</section>
 	<section id="gallery" class="py-20 pb-40 bg-gray-100 ">
@@ -100,7 +107,9 @@
       			Autorka strony: Paulina Ziółkowska
     		</p>
     		<p class="text-sm">
-      			Źródła: <a href="https://www.facebook.com/BitwaoKrowe1469/" class="text-green-300 hover:underline">Facebook - Bitwa o Krowę 1469</a>
+      			Źródła:<br>
+      			<a href="https://www.facebook.com/BitwaoKrowe1469/" class="text-green-300 hover:underline">Facebook - Bitwa o Krowę 1469</a><br>
+      			
     		</p>
   </div>
 </footer>
