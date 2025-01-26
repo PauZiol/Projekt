@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bitwa o krowę</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style type="text/tailwindcss">
+	
+    </style>
+</head>
+<body id="top">
+	<header class="bg-emerald-950 text-white sticky top-0 z-50">
+		<div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="text-2xl font-bold text-secondary">Bitwa o Krowę</a>
+     <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#top" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
+      <a href="#history" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
+      <a href="#gallery" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Galeria</a>
+      <a href="#city" class="text-secondary hover:text-accent font-medium  hover:underline hover:text-green-300">Miasta</a>
+    </nav>
+	</header>
+	<script>
+  		function toggleMenu() {
+    		const menu = document.getElementById('menu');
+    		menu.classList.toggle('hidden');
+ 		}
+	</script>
+	<section class="relative bg-cover bg-center text-white h-[750px] flex items-center justify-center text-center" style="background-image: url('bg_cow.jpeg');">
+  <h1 class="text-5xl sm:text-7xl lg:text-9xl font-bold">Bitwa o krowę</h1>
+</section>
+	<section id="history" class="px-4 bg-green-700 text-white py-20 pb-40">
+		<div class="mx-4 sm:mx-10 lg:mx-20 ">
+			<h2 class="text-center text-2xl sm:text-3xl font-bold mb-6 pb-10">Historia</h2>
+			<p class="mb-4 text-sm sm:text-base">
+				Wojna o krowę czy też krowia bitwa lub bitwa o krowę została stoczona 15 lipca 1469 roku pod graniczną wsią Długie (dziś województwo zachodniopomorskie). Wojskami białogardzian dowodzić miał tamtejszy wójt Karsten z Oparzna, zaś nad siłami świdwińskimi dowództwo sprawował syn wójta, Christoph von Polenz. Zdecydowanym zwycięzcą starcia okazały się oddział miasta brandenburskiego.
+			</p>
+			<p class="mb-6 text-sm sm:text-base">Więcej o historii bitwy możesz przeczytać w artykule <a href="https://historykon.pl/wojna-o-krowe-1469/" class="text-green-300 hover:underline">"15 lipca 1469 roku rozpoczęła się wojna o krowę"</a>.</p>
+			<p>Historia bez cenzury o bitwie o krowę:</p><br><br>
+			<div class="aspect-w-16 aspect-h-9 flex justify-center">
+			<iframe src="https://www.youtube.com/embed/RhT0Oxv6oPc?si=opC9qFULp6SjzfCj&amp;start=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full max-w-lg aspect-video"></iframe>
+			</div><br><br>
+			<p>Obejrzyj również <a href="https://vod.tvp.pl/programy,88/wojownicy-czasu-odcinki,389851/odcinek-102,S01E102,1766731" class="text-green-300 hover:underline">Wojowników czasu</a>, którzy również opowiedzieli historie Bitwy o krowę.</p>
+		</div>
+	</section>
+	<section id="gallery" class="py-20 pb-40 bg-gray-100 ">
+		<h2 class="text-3xl font-bold text-center mb-6 pb-10">Galeria</h2>
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+			<div class="w-full h-80">
+				<img src="zdj1.jpg" alt="Zdjęcie 1" class="w-full h-full object-cover rounded-lg shadow-md">
+			</div>
+			<div class="w-full h-80">
+				<img src="zdj2.jpg" alt="Zdjęcie 2" class="w-full h-full object-cover rounded-lg shadow-md">
+			</div>
+			<div class="w-full h-80">
+				<img src="zdj3.jpg" alt="Zdjęcie 3" class="w-full h-full object-cover rounded-lg shadow-md">
+			</div>
+			<div class="w-full h-80">
+				<img src="zdj4.jpg" alt="Zdjęcie 4" class="w-full h-full object-cover rounded-lg shadow-md">
+			</div>
+			<div class="w-full h-80">
+				<img src="zdj5.jpg" alt="Zdjęcie 5" class="w-full h-full object-cover rounded-lg shadow-md">
+			</div>
+			<div class="w-full h-80">
+				<img src="zdj6.jpg" alt="Zdjęcie 6" class="w-full h-full object-cover rounded-lg shadow-md">
+			</div>
+		</div>
+	</section>
+	<section id="city" class="py-20 px-4 bg-green-700 text-white">
+  		<h2 class="text-3xl font-bold text-center mb-6 pb-10">Miasta</h2>
+  		<div class="flex flex-wrap items-center justify-center gap-8">
+    	<div class="text-center">
+    		<a href="https://www.swidwin.pl/asp/start,0"><img src="herb_swidwin.png" alt="Herb Świdwina" class="w-16 sm:w-24 mx-auto"></a>
+    		<p class="mt-2 text-sm sm:text-base">Urząd Miasta Świdwin</p>
+   		</div>
+    	<div class="text-center">
+      		<a href="https://bialogard.info"><img src="herb_bialogard.png" alt="Herb Białogardu" class="w-16 sm:w-24 mx-auto"></a>
+      		<p class="mt-2 text-sm sm:text-base">Miasto Białogard</p>
+    	</div>
+  		</div>
+	</section>
+		<footer class="bg-emerald-950 text-white py-4">
+  			<div class="container mx-auto flex justify-between items-center max-w-4xl px-4">
+   			<p class="text-sm">
+      			Autorka strony: Paulina Ziółkowska
+    		</p>
+    		<p class="text-sm">
+      			Źródła: <a href="https://www.facebook.com/BitwaoKrowe1469/" class="text-green-300 hover:underline">Facebook - Bitwa o Krowę 1469</a>
+    		</p>
+  </div>
+</footer>
+</body>
+</html>
