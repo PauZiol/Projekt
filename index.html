@@ -11,20 +11,30 @@
 </head>
 <body id="top">
 	<header class="bg-emerald-950 text-white sticky top-0 z-50">
-		<div class="container mx-auto px-6 py-4 flex items-center justify-between">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
     <a href="#" class="text-2xl font-bold text-secondary">Bitwa o Krowę</a>
-     <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
+    <!-- Przycisk do otwierania menu w wersji mobilnej -->
+    <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
     </button>
+    <!-- Nawigacja w wersji desktop -->
     <nav class="hidden md:flex space-x-6">
       <a href="#top" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
       <a href="#history" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
       <a href="#gallery" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Galeria</a>
       <a href="#city" class="text-secondary hover:text-accent font-medium  hover:underline hover:text-green-300">Miasta</a>
     </nav>
-	</header>
+  </div>
+  <!-- Menu w wersji mobilnej -->
+  <nav id="menu" class="hidden md:hidden bg-emerald-900 text-white px-6 py-4 space-y-4">
+    <a href="#top" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
+    <a href="#history" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
+    <a href="#gallery" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Galeria</a>
+    <a href="#city" class="block text-secondary hover:text-accent font-medium  hover:underline hover:text-green-300">Miasta</a>
+  </nav>
+</header>
 	<script>
   		function toggleMenu() {
     		const menu = document.getElementById('menu');
