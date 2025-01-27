@@ -40,17 +40,25 @@
  		}
 	</script>
 	<section class="relative bg-cover bg-center text-white h-[750px] flex items-center flex-col justify-center text-center" style="background-image: url('bg_cow.jpeg');">
-		 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Tradycyjny turniej miast Świdwina i Białogardu</h2>
+		 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Tradycyjny turniej miast Świdwina i Białogardu</h2><br><br>
  		 <h1 class="text-5xl sm:text-7xl lg:text-9xl font-bold">Bitwa o krowę</h1>
  	</section>
  	<section id="about" class="py-20 pb-40 bg-gray-100 px-4">
  		<div class="sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4">
- 			<h2 class="sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center mb-6 pb-10">O wydarzeniu</h2>
+ 			<h2 class="text-3xl font-bold text-center mb-6 pb-10">O wydarzeniu</h2>
+ 			<div class="flex items-center space-x-4">
+    			<div class="flex-grow border-t border-black"></div>
+    			<img src="cow_black.svg" class="h-[50px]">
+    			<div class="flex-grow border-t border-black"></div>
+			</div>
+ 			<br><br>
  			<div id="about-section" class="relative">
  			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl" id="short-text">
- 				Impreza ta znajduje swoje źródło w dawnych dziejach ziemi świdwińskiej, kiedy to <b>15 lipca 1469 roku</b> miała miejsce <b>krwawa bitwa pomiędzy mieszkańcami Świdwina i Białogardu</b>. Powodem konfliktu był <b>spór o krowę</b> zagarniętą właścicielowi świdwińskiemu przez białogardzian. Dokładnie pięćset lat po tym zatargu, w celu upamiętnienia tego historycznego wydarzenia, odbył się <b>pierwszy wielki turniej</b> pod nazwą <b>„Bitwa o Krowę”</b>, z inicjatywy ówczesnego instruktora Powiatowego Ośrodka Kultury – Leona Zdanowicza. Od tego czasu rokrocznie impreza odbywa się naprzemiennie w Świdwinie i Białogardzie, a symboliczne <b>trofeum stanowią pięknie spreparowane krowie rogi</b>, które zdobią siedzibę zwycięskiej drużyny, do czasu kolejnej bitewnej potyczki.
+ 				Impreza ta znajduje swoje źródło w dawnych dziejach ziemi świdwińskiej, kiedy to <b>15 lipca 1469 roku</b> miała miejsce <b>krwawa bitwa pomiędzy mieszkańcami Świdwina i Białogardu</b>. Powodem konfliktu był <b>spór o krowę</b> zagarniętą właścicielowi świdwińskiemu przez białogardzian.
+ 				<br><br>
+ 				Dokładnie pięćset lat po tym zatargu, w celu upamiętnienia tego historycznego wydarzenia, odbył się <b>pierwszy wielki turniej</b> pod nazwą <b>„Bitwa o Krowę”</b>, z inicjatywy ówczesnego instruktora Powiatowego Ośrodka Kultury – Leona Zdanowicza. Od tego czasu rokrocznie impreza odbywa się naprzemiennie w Świdwinie i Białogardzie, a symboliczne <b>trofeum stanowią pięknie spreparowane krowie rogi</b>, które zdobią siedzibę zwycięskiej drużyny, do czasu kolejnej bitewnej potyczki.
  			</p><br>
- 			<div class="hidden" id="full-text">
+ 			<div class="hidden" id="full-text-about">
  			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl"> 
  				Program <b>„Bitwy o Krowę”</b> oferuje widzom co roku <b>szereg ciekawych atrakcji</b>, do których należą między innymi: 
  			</p><br><br>
@@ -99,31 +107,61 @@
  		</div>
  		<script>
   			function toggleAbout() {
-   			 document.getElementById('full-text').classList.toggle('hidden');
+   			 document.getElementById('full-text-about').classList.toggle('hidden');
   			}
 		</script>
  		</div>
  	</section>
-	<section id="history" class="py-20 bg-green-700 text-white px-4">
+	<section id="history" class="py-20 bg-gradient-to-r from-green-700 from-10% via-green-700 via-30% to-green-900 to-90% text-white px-4">
 		<div class="sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4">
-			<h2 class="text-center sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 pb-10">Historia</h2>
-			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">
-				W 1469 roku pomiędzy brandenburskim Świdwinem a pomorskim Białogardem doszło do bitwy, która była efektem sporu o krowę mieszkańców przygranicznych wiosek. Mieszkaniec Niemierzyna pożyczył, na okres zimy, krowę mieszkańcowi ziemi białogardzkiej. Ten jednak, na wiosnę, nie spieszył się z oddaniem własności. Poszkodowany, wraz z sąsiadami wtargnął do zagrody białogardzkiej odebrał swoją krowę i kilka sztuk bydła więcej. W odpowiedzi chłopi białogardzcy napadli Niemierzyno i ukradli znaczną ilość bydła. Na co Jakob von Polenz ówczesny Wójt Świdwina poskarżył się Staroście białogardzkiemu Karstenowi Wopersnow. Ten skargę pozostawił bez odpowiedzi. W efekcie za przyzwoleniem władzy świdwińskiej zorganizowano oddział złożony z chłopów i mieszczan, który wtargnął na ziemię białogardzką i zagarnął bydło znajdujące się na pastwiskach. Skłoniło to starostę białogardzkiego do zorganizowania wyprawy wojennej przeciwko Świdwinowi. Wieść o szykujących się do wojny białogardzianach dotarła do Świdwina. Jakob von Polenz postanowił wysłać znaczny oddział, pod przywództwem swojego syna Christopha, naprzeciw nieprzyjacielowi.</p>
-				<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">Świdwinianie i białogardzianie spotkali się pod wsią Łęgi i tam starli w bitwie. Podobno poległo 300 Pomorzan, a 100 wzięto do niewoli. Zarekwirowano 50 wozów ze sprzętem wojennym, sztandar mieszczan białogardzkich zawisł w świdwińskim kościele. Według legendy pierścień żelazny ukuty ze strzemion, których używał starosta Wopersnow zawisł nad przejściem w Bramie Kamiennej.</p>
-			</p><br>
-			<p class="text-right text-sm">Źródło: <a href="https://zamek.swidwin.pl/bitwa-o-krowe/" class="text-green-300 hover:underline">Świdwiński Ośrodek Kultury Zamek</a></p><br>
-			<div class="aspect-w-16 aspect-h-9 flex justify-center">
-			<iframe src="https://www.youtube.com/embed/RhT0Oxv6oPc?si=opC9qFULp6SjzfCj&amp;start=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full max-w-lg aspect-video"></iframe>
+			<h2 class="text-3xl font-bold text-center mb-6 pb-10">Historia</h2>
+			<div class="flex items-center space-x-4">
+    			<div class="flex-grow border-t border-white"></div>
+    			<img src="cow_white.svg" class="h-[50px]">
+    			<div class="flex-grow border-t border-white"></div>
 			</div><br><br>
-			<p class="mb-6 text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">Więcej informacji na temat bitwy o krowę:<br>
+			<div class="aspect-w-16 aspect-h-9 flex justify-center">
+			<iframe src="https://www.youtube.com/embed/RhT0Oxv6oPc?si=opC9qFULp6SjzfCj&amp;start=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full max-w-4xl aspect-video"></iframe>
+			</div><br><br><br>
+			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">
+				W 1469 roku pomiędzy <b>brandenburskim Świdwinem</b> a <b>pomorskim Białogardem</b> doszło do <b>bitwy</b>, która była efektem <b>sporu o krowę</b> mieszkańców przygranicznych wiosek.
+				<br><br>
+				Mieszkaniec <b>Niemierzyna</b> pożyczył, na okres zimy, krowę mieszkańcowi ziemi białogardzkiej. Ten jednak, na wiosnę, nie spieszył się z oddaniem własności. <b>Poszkodowany, wraz z sąsiadami wtargnął do zagrody białogardzkiej odebrał swoją krowę i kilka sztuk bydła więcej</b>.
+			</p><br>
+			<div class="hidden" id="full-text-history">
+			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">
+				W odpowiedzi <b>chłopi białogardzcy napadli Niemierzyno i ukradli znaczną ilość bydła</b>. Na co <b>Jakob von Polenz</b> ówczesny <b>Wójt Świdwina</b> poskarżył się <b>Staroście białogardzkiemu Karstenowi Wopersnow</b>. Ten skargę pozostawił bez odpowiedzi. <br><br>
+				W efekcie za przyzwoleniem władzy świdwińskiej <b>zorganizowano oddział złożony z chłopów i mieszczan</b>, który wtargnął na ziemię białogardzką i zagarnął bydło znajdujące się na pastwiskach.<br><br>
+				Skłoniło to starostę białogardzkiego do <b>zorganizowania wyprawy wojennej przeciwko Świdwinowi</b>. Wieść o szykujących się do wojny białogardzianach dotarła do Świdwina. <b>Jakob von Polenz postanowił wysłać znaczny oddział</b>, pod przywództwem swojego syna <b>Christopha</b>, naprzeciw nieprzyjacielowi.</p><br>
+				<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">Świdwinianie i białogardzianie spotkali się <b>pod wsią Łęgi</b> i tam <b>starli w bitwie</b>. Podobno <b>poległo 300 Pomorzan</b>, a <b>100 wzięto do niewoli</b>. <b>Zarekwirowano 50 wozów</b> ze sprzętem wojennym, sztandar mieszczan białogardzkich zawisł w świdwińskim kościele. Według legendy pierścień żelazny ukuty ze strzemion, których używał starosta Wopersnow zawisł nad przejściem w Bramie Kamiennej.</p>
+			</p><br>
+			<p class="mb-6 text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">Więcej informacji na temat bitwy o krowę:</p><br>
 			<ul class="list-disc marker:text-white text-white pl-5 space-y-2 sm:text-1xl lg:text-2xl md:text-2xl">
 				<li><a href="https://historykon.pl/wojna-o-krowe-1469/" class="text-green-300 hover:underline">"15 lipca 1469 roku rozpoczęła się wojna o krowę"</a>.</li>
 				<li><a href="https://vod.tvp.pl/programy,88/wojownicy-czasu-odcinki,389851/odcinek-102,S01E102,1766731" class="text-green-300 hover:underline">Wojownicy czasu odc. 102 - "Zatarg o krowę między mieszkańcami Świdwina i Białogardu."</a></li></p>
 			</ul>
+			</div><br><br>
+			<button onclick="toggleHistory()" class="text-white hover:underline inline-block lg:text-2xl sm:text-1xl md:text-2xl">Czytaj więcej</button><br><br><br>
+			
+			<p class="text-right text-sm">Źródło: <a href="https://zamek.swidwin.pl/bitwa-o-krowe/" class="text-green-300 hover:underline">Świdwiński Ośrodek Kultury Zamek</a></p><br>
+			
+		
+
+			<script>
+  			function toggleHistory() {
+   			 document.getElementById('full-text-history').classList.toggle('hidden');
+  			}
+		</script>
 		</div>
 	</section>
 	<section id="gallery" class="py-20 pb-40 bg-gray-100 ">
-		<h2 class="text-3xl font-bold text-center mb-6 pb-10">Galeria</h2>
+		<h2 class="text-3xl font-bold text-center pb-10">Galeria</h2>
+		<div class="flex items-center space-x-4 sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4">
+    			<div class="flex-grow border-t border-black"></div>
+    			<img src="cow_black.svg" class="h-[50px]">
+    			<div class="flex-grow border-t border-black"></div>
+			</div>
+			<br><br>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
 			<div class="w-full h-80">
 				<img src="zdj1.jpg" alt="Zdjęcie 1" class="w-full h-full object-cover rounded-lg shadow-md">
@@ -147,6 +185,11 @@
 	</section>
 	<section id="city" class="py-20 px-4 bg-green-700 text-white">
   		<h2 class="text-3xl font-bold text-center mb-6 pb-10">Miasta</h2>
+  		<div class="flex items-center space-x-4 sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4">
+    			<div class="flex-grow border-t border-white"></div>
+    			<img src="cow_white.svg" class="h-[50px]">
+    			<div class="flex-grow border-t border-white"></div>
+			</div><br><br>
   		<div class="flex flex-wrap items-center justify-center gap-8">
     	<div class="text-center">
     		<a href="https://www.swidwin.pl/asp/start,0"><img src="herb_swidwin.png" alt="Herb Świdwina" class="w-16 sm:w-24 mx-auto"></a>
