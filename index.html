@@ -12,27 +12,27 @@
 </head>
 <body id="top">
 	<header class="bg-emerald-950 text-white sticky top-0 z-50">
-		<div class="container mx-auto px-6 py-4 flex items-center justify-between">
-			<a href="#top" class="text-2xl font-bold text-secondary">Bitwa o Krowę</a>
-    			<button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
-      			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-      			</svg>
-    			</button>
-   			<nav class="hidden md:flex space-x-6">
-      				<a href="#about" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
-      				<a href="#history" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
-      				<a href="#gallery" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Galeria</a>
-      				<a href="#city" class="text-secondary hover:text-accent font-medium  hover:underline hover:text-green-300">Miasta</a>
-    			</nav>
-  		</div>
-  		<nav id="menu" class="hidden md:hidden bg-emerald-900 text-white px-6 py-4 space-y-4">
-    			<a href="#top" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
-    			<a href="#history" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
-    			<a href="#gallery" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Galeria</a>
-    			<a href="#city" class="block text-secondary hover:text-accent font-medium  hover:underline hover:text-green-300">Miasta</a>
-  		</nav>
-	</header>
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#top" class="text-2xl font-bold text-secondary">Bitwa o Krowę</a>
+    <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#about" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
+      <a href="#history" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
+      <a href="#gallery" class="text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Galeria</a>
+      <a href="#city" class="text-secondary hover:text-accent font-medium  hover:underline hover:text-green-300">Miasta</a>
+    </nav>
+  </div>
+  <nav id="menu" class="hidden md:hidden bg-emerald-900 text-white px-6 py-4 space-y-4">
+    <a href="#top" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">O wydarzeniu</a>
+    <a href="#history" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Historia</a>
+    <a href="#gallery" class="block text-secondary hover:text-accent font-medium hover:text-green-300 hover:underline">Galeria</a>
+    <a href="#city" class="block text-secondary hover:text-accent font-medium  hover:underline hover:text-green-300">Miasta</a>
+  </nav>
+</header>
 	<script>
   		function toggleMenu() {
     		const menu = document.getElementById('menu');
@@ -40,31 +40,86 @@
  		}
 	</script>
 	<section class="relative bg-cover bg-center text-white h-[750px] flex items-center flex-col justify-center text-center" style="background-image: url('bg_cow.jpeg');">
+		 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Tradycyjny turniej miast Świdwina i Białogardu</h2>
  		 <h1 class="text-5xl sm:text-7xl lg:text-9xl font-bold">Bitwa o krowę</h1>
- 		 <h2 class="text-3xl sm:text-5xl lg:text-7xl font-bold">Poznaj świdwińsko-białogardzki turniej!</h2>
  	</section>
- 	<section id="about" class="py-20 pb-40 bg-gray-100">
- 		<div class="max-w-6xl mx-auto">
- 			<h2 class="text-3xl font-bold text-center mb-6 pb-10">O wydarzeniu</h2>
- 			<p class=" mb-4 text-2xl">Jedna z bardziej spektakularnych imprez Świdwińskiego Ośrodka Kultury, będących jego wizytówką. Impreza ta znajduje swoje źródło w dawnych dziejach ziemi świdwińskiej, kiedy to <b>15 lipca 1469 roku</b> miała miejsce krwawa bitwa pomiędzy mieszkańcami Świdwina i Białogardu. Powodem konfliktu był spór o krowę zagarniętą właścicielowi świdwińskiemu przez białogardzian. Dokładnie pięćset lat po tym zatargu, w celu upamiętnienia tego historycznego wydarzenia, odbył się pierwszy wielki turniej pod nazwą <b>„Bitwa o Krowę”</b>, z inicjatywy ówczesnego instruktora Powiatowego Ośrodka Kultury – Leona Zdanowicza. Od tego czasu rokrocznie impreza odbywa się naprzemiennie w Świdwinie i Białogardzie, a symboliczne trofeum stanowią pięknie spreparowane krowie rogi, które zdobią siedzibę zwycięskiej drużyny, do czasu kolejnej bitewnej potyczki. Program „Bitwy o Krowę” oferuje widzom co roku szereg ciekawych atrakcji, do których należą między innymi ćwiczenia z białą bronią, turnieje łucznicze, inscenizacje bitewne, potyczki rycerskie, a także pokazy zabaw plebejskich i średniowiecznych tańców.</p><br>
- 			<p class="text-justify mb-4 text-2xl">Głównym punktem programu jest turniej wojów rozgrywany pomiędzy drużynami Świdwina i Białogardu. Składa się z kilkunastu konkurencji sprawnościowych, z których wyróżnić warto strzelanie z łuku i kuszy oraz rzut oszczepem i toporem do celu. Całość imprezy, która utrzymana jest w klimacie czasów średniowiecznych, idealnie wkomponowuje się w scenerię zamkową, która dodaje wydarzeniu specyficznego uroku i atrakcyjności. „Bitwa o Krowę” cieszy się dużą popularnością i zainteresowaniem wśród mieszkańców obu miast oraz turystów i co roku przyciąga liczne grono odbiorców.</p><br>
- 			<p class="text-justify mb-4 text-2xl">Na uwagę zasługuje fakt, iż „Bitwa o Krowę” w 2006 roku została nagrodzona nominacją w kategorii produkt turystyczny województwa zachodniopomorskiego przez kapitułę na czele z Marszałkiem Województwa Zachodniopomorskiego prof. Zygmuntem Meyerem. Nagrody przyznano jedynie trzem imprezom w skali województwa, co świadczy o ogromnym wyróżnieniu.</p><br>
+ 	<section id="about" class="py-20 pb-40 bg-gray-100 px-4">
+ 		<div class="sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4">
+ 			<h2 class="sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center mb-6 pb-10">O wydarzeniu</h2>
+ 			<div id="about-section" class="relative">
+ 			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl" id="short-text">
+ 				Impreza ta znajduje swoje źródło w dawnych dziejach ziemi świdwińskiej, kiedy to <b>15 lipca 1469 roku</b> miała miejsce <b>krwawa bitwa pomiędzy mieszkańcami Świdwina i Białogardu</b>. Powodem konfliktu był <b>spór o krowę</b> zagarniętą właścicielowi świdwińskiemu przez białogardzian. Dokładnie pięćset lat po tym zatargu, w celu upamiętnienia tego historycznego wydarzenia, odbył się <b>pierwszy wielki turniej</b> pod nazwą <b>„Bitwa o Krowę”</b>, z inicjatywy ówczesnego instruktora Powiatowego Ośrodka Kultury – Leona Zdanowicza. Od tego czasu rokrocznie impreza odbywa się naprzemiennie w Świdwinie i Białogardzie, a symboliczne <b>trofeum stanowią pięknie spreparowane krowie rogi</b>, które zdobią siedzibę zwycięskiej drużyny, do czasu kolejnej bitewnej potyczki.
+ 			</p><br>
+ 			<div class="hidden" id="full-text">
+ 			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl"> 
+ 				Program <b>„Bitwy o Krowę”</b> oferuje widzom co roku <b>szereg ciekawych atrakcji</b>, do których należą między innymi: 
+ 			</p><br><br>
+ 			<div class="text-left mb-4 lg:text-2xl sm:text-1xl md:text-2xl">
+    			<div class="flex flex-wrap md:flex-nowrap gap-4">
+        			<ul class="space-y-2 w-full md:w-1/2 px-4">
+           				<li class="flex items-start">
+            				<span class="text-green-900 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-swords"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg></span>
+            				<b><em>Ćwiczenia z białą bronią</em></b>
+            			</li><br>
+            			<li class="flex items-start">
+            				<span class="text-green-900 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-swords"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg></span>
+            				<b><em>Turnieje łucznicze</em></b>
+            			</li><br> 
+            			<li class="flex items-start">
+            				<span class="text-green-900 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-swords"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg></span>
+            				<b><em>Inscenizacje bitewne</em></b>
+            			</li>
+        			</ul>
+        			<br>
+        			<ul class="space-y-2 w-full md:w-1/2 px-4">
+            			<li class="flex items-start">
+            				<span class="text-green-900 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-swords"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg></span>
+            				<b><em>Potyczki rycerskie</em></b>
+            			</li><br>
+            			<li class="flex items-start">
+            				<span class="text-green-900 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-swords"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg></span>
+            				<b><em>Pokazy zabaw plebejskich</em></b>
+            			</li><br> 
+           				<li class="flex items-start">
+            				<span class="text-green-900 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-swords"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg></span>
+            				<b><em>Pokazy średniowiecznych tańców</em></b>
+            			</li>
+        			</ul>
+   				</div>
+			</div>
+ 			<br><br>
+ 			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">Głównym punktem programu jest <b>turniej wojów rozgrywany pomiędzy drużynami Świdwina i Białogardu</b>. Składa się z kilkunastu konkurencji sprawnościowych, z których wyróżnić warto <b>strzelanie z łuku i kuszy</b> oraz <b>rzut oszczepem i toporem do celu</b>. Całość imprezy, która utrzymana jest w klimacie czasów średniowiecznych, idealnie wkomponowuje się w scenerię zamkową, która dodaje wydarzeniu specyficznego uroku i atrakcyjności. <b>„Bitwa o Krowę”</b> cieszy się dużą popularnością i zainteresowaniem wśród mieszkańców obu miast oraz turystów i co roku przyciąga liczne grono odbiorców.
+ 			<br><br>
+ 			Na uwagę zasługuje fakt, iż <b>„Bitwa o Krowę”</b> w <b>2006 roku</b> została <b>nagrodzona</b> nominacją w kategorii <b>produkt turystyczny województwa zachodniopomorskiego</b> przez kapitułę na czele z Marszałkiem Województwa Zachodniopomorskiego prof. Zygmuntem Meyerem. Nagrody przyznano jedynie trzem imprezom w skali województwa, co świadczy o ogromnym wyróżnieniu.</p>
+ 			</p><br>
+ 			</div>
+ 			<button onclick="toggleAbout()" class="text-green-700 hover:underline inline-block lg:text-2xl sm:text-1xl md:text-2xl">Czytaj więcej</button>
+ 			<br><br><br>
  		<p class="text-right text-sm">Źródło: <a href="https://zamek.swidwin.pl/bitwa-o-krowe/" class="text-green-600 hover:underline">Świdwiński Ośrodek Kultury Zamek</a></p>
+ 		</div>
+ 		<script>
+  			function toggleAbout() {
+   			 document.getElementById('full-text').classList.toggle('hidden');
+  			}
+		</script>
+ 		</div>
  	</section>
 	<section id="history" class="py-20 bg-green-700 text-white px-4">
-		<div class="max-w-4xl mx-auto">
-			<h2 class="text-center text-2xl sm:text-3xl font-bold mb-6 pb-10">Historia</h2>
-			<p class="text-justify mb-4">
+		<div class="sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4">
+			<h2 class="text-center sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6 pb-10">Historia</h2>
+			<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">
 				W 1469 roku pomiędzy brandenburskim Świdwinem a pomorskim Białogardem doszło do bitwy, która była efektem sporu o krowę mieszkańców przygranicznych wiosek. Mieszkaniec Niemierzyna pożyczył, na okres zimy, krowę mieszkańcowi ziemi białogardzkiej. Ten jednak, na wiosnę, nie spieszył się z oddaniem własności. Poszkodowany, wraz z sąsiadami wtargnął do zagrody białogardzkiej odebrał swoją krowę i kilka sztuk bydła więcej. W odpowiedzi chłopi białogardzcy napadli Niemierzyno i ukradli znaczną ilość bydła. Na co Jakob von Polenz ówczesny Wójt Świdwina poskarżył się Staroście białogardzkiemu Karstenowi Wopersnow. Ten skargę pozostawił bez odpowiedzi. W efekcie za przyzwoleniem władzy świdwińskiej zorganizowano oddział złożony z chłopów i mieszczan, który wtargnął na ziemię białogardzką i zagarnął bydło znajdujące się na pastwiskach. Skłoniło to starostę białogardzkiego do zorganizowania wyprawy wojennej przeciwko Świdwinowi. Wieść o szykujących się do wojny białogardzianach dotarła do Świdwina. Jakob von Polenz postanowił wysłać znaczny oddział, pod przywództwem swojego syna Christopha, naprzeciw nieprzyjacielowi.</p>
-				<p class="text-justify mb-4">Świdwinianie i białogardzianie spotkali się pod wsią Łęgi i tam starli w bitwie. Podobno poległo 300 Pomorzan, a 100 wzięto do niewoli. Zarekwirowano 50 wozów ze sprzętem wojennym, sztandar mieszczan białogardzkich zawisł w świdwińskim kościele. Według legendy pierścień żelazny ukuty ze strzemion, których używał starosta Wopersnow zawisł nad przejściem w Bramie Kamiennej.</p>
+				<p class="text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">Świdwinianie i białogardzianie spotkali się pod wsią Łęgi i tam starli w bitwie. Podobno poległo 300 Pomorzan, a 100 wzięto do niewoli. Zarekwirowano 50 wozów ze sprzętem wojennym, sztandar mieszczan białogardzkich zawisł w świdwińskim kościele. Według legendy pierścień żelazny ukuty ze strzemion, których używał starosta Wopersnow zawisł nad przejściem w Bramie Kamiennej.</p>
 			</p><br>
 			<p class="text-right text-sm">Źródło: <a href="https://zamek.swidwin.pl/bitwa-o-krowe/" class="text-green-300 hover:underline">Świdwiński Ośrodek Kultury Zamek</a></p><br>
 			<div class="aspect-w-16 aspect-h-9 flex justify-center">
 			<iframe src="https://www.youtube.com/embed/RhT0Oxv6oPc?si=opC9qFULp6SjzfCj&amp;start=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full max-w-lg aspect-video"></iframe>
 			</div><br><br>
-			<p class="mb-6 text-sm sm:text-base">Więcej informacji na temat bitwy o krowę:<br>
-			<a href="https://historykon.pl/wojna-o-krowe-1469/" class="text-green-300 hover:underline">"15 lipca 1469 roku rozpoczęła się wojna o krowę"</a>.<br>
-			<a href="https://vod.tvp.pl/programy,88/wojownicy-czasu-odcinki,389851/odcinek-102,S01E102,1766731" class="text-green-300 hover:underline">Wojownicy czasu odc. 102 - Zatarg o krowę między mieszkańcami Świdwina i Białogardu.</a></p>
+			<p class="mb-6 text-justify mb-4 lg:text-2xl sm:text-1xl md:text-2xl">Więcej informacji na temat bitwy o krowę:<br>
+			<ul class="list-disc marker:text-white text-white pl-5 space-y-2 sm:text-1xl lg:text-2xl md:text-2xl">
+				<li><a href="https://historykon.pl/wojna-o-krowe-1469/" class="text-green-300 hover:underline">"15 lipca 1469 roku rozpoczęła się wojna o krowę"</a>.</li>
+				<li><a href="https://vod.tvp.pl/programy,88/wojownicy-czasu-odcinki,389851/odcinek-102,S01E102,1766731" class="text-green-300 hover:underline">Wojownicy czasu odc. 102 - "Zatarg o krowę między mieszkańcami Świdwina i Białogardu."</a></li></p>
+			</ul>
 		</div>
 	</section>
 	<section id="gallery" class="py-20 pb-40 bg-gray-100 ">
